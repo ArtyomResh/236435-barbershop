@@ -27,7 +27,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a class="active" href="#">Магазин</a>
+              <a href="#" class="current-menu">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -53,7 +53,7 @@
           <a href="#">Магазин</a>
         </li>
         <li>
-          <a class="active" href="#">Средства для ухода</a>
+          <span class="current">Средства для ухода</span>
         </li>
       </ul>
       </section>
@@ -196,16 +196,16 @@
         <section class="catalog-nav">
           <ul>
             <li>
-              <a class="btn" href="#">1</a>
+              <a href="#" class="btn">1</a>
             </li>
             <li>
-              <a class="btn active" href="#">2</a>
+              <a href="#" class="btn active">2</a> <!--Возник вопрос. Так ли уж нужно писать активной странице класс .active, разве это не рашается с помощью CSS?-->
+            </li>                                  <!--И второй вопрос. Мы ведь на второй странице каталога, так? Тогда это ведь тут не должно быть ссылки или я не прав?-->
+            <li>
+              <a href="#" class="btn">3</a>
             </li>
             <li>
-              <a class="btn" href="#">3</a>
-            </li>
-            <li>
-              <a class="btn" href="#">4</a>
+              <a href="#" class="btn">4</a>
             </li>
           </ul>
         </section>
@@ -225,13 +225,13 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
         </section>
       </div>
     </footer>
