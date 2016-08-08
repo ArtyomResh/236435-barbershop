@@ -27,7 +27,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a class="active" href="#">Магазин</a>
+              <a href="#" class="current-menu">Магазин</a> <!--Вот тут немного непонятно. Если судить по хлебным крошкам, то мы не в "Магазине", а в его подменю "Средства для ухода". Как быть?-->
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -35,7 +35,7 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#">Вход</a>
+          <a href="#" class="login">Вход</a>
         </div>
       </div>
     </header>
@@ -43,7 +43,7 @@
     <!--Хлебные крошки-->
 
     <main class="container">
-      <section class="breadcrumbs">
+      <div class="breadcrumbs">
       <h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
       <ul>
         <li>
@@ -56,32 +56,29 @@
           <a href="#">Средства для ухода</a>
         </li>
         <li>
-          <a href="#">Средства для ухода</a>
-        </li>
-        <li>
-          <a class="active" href="#">Набор для путешествий "BAXTER OF CALIFORNIA"</a>
+          <span class="current">Набор для путешествий "BAXTER OF CALIFORNIA"</span>
         </li>
       </ul>
-      </section>
+    </div>
 
     <!--Блок товара-->
 
-    <div class="item-block">
+    <section class="item-block">
 
     <!--Фотографии товара-->
 
       <div class="item-pics">
-        <a class="item-pics-major" href=#><img src="http://placehold.it/460x498" width="460" height="498" alt="Фотография товара"></a>
-        <a class="item-pics-minor" href=#><img src="http://placehold.it/140x149" width="140" height="149" alt="Фотография товара"></a>
-        <a class="item-pics-minor" href=#><img src="http://placehold.it/140x149" width="140" height="149" alt="Фотография товара"></a>
-        <a class="item-pics-minor" href=#><img src="http://placehold.it/140x149" width="140" height="149" alt="Фотография товара"></a>
+        <a href="#" class="item-pics-major"><img src="http://placehold.it/460x498" width="460" height="498" alt="Фотография товара"></a>
+        <a href="#" class="item-pics-minor"><img src="http://placehold.it/140x149" width="140" height="149" alt="Фотография товара"></a>
+        <a href="#" class="item-pics-minor"><img src="http://placehold.it/140x149" width="140" height="149" alt="Фотография товара"></a>
+        <a href="#" class="item-pics-minor"><img src="http://placehold.it/140x149" width="140" height="149" alt="Фотография товара"></a>
       </div>
 
     <!--Описание товара-->
-      <div class="item-status">
-        <span class="stock in-stock">есть в наличии</span>
-        <span class="stock not-in-stock">нет в наличии</span> <!--предусмотрел вариант отсутсвия товара-->
-        <span class="article">артикул:dexter-ae</span>
+      <div class="item-stock-status">
+        <span class="stock stock-true">есть в наличии</span>
+        <span class="stock stock-false">нет в наличии</span> <!--предусмотрел вариант отсутсвия товара-->
+        <span class="stock-articulus">артикул:dexter-ae</span>
       </div>
       <div class="item-description">
         <p>
@@ -97,14 +94,14 @@
 
       <!--Кнопка купить-->
 
-      <section class="item-price">
+      <div class="item-price">
         <span class="price">2900 руб.</span>
-        <button class="btn btn-buy" type="button">Купить</button>
-      </section>
+        <a href="#" class="btn btn-buy">Купить</a>
+      </div>
 
       <!--Спецификация товара-->
 
-      <section class="item-spec">
+      <div class="item-spec">
         <h2>В набор входят:</h2>
         <ul>
           <li>
@@ -123,30 +120,30 @@
             Удобная кожаная косметичка
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
     </main>
 
     <!--Футер-->
 
     <footer class="main-footer">
       <div class="container">
-        <section class="footer-contacts">
+        <div class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г.Санкт-Петербург,УЛ.Б.Конюшенная,<br>
           д.19/8<br>
           <a href="#">Как нас найти?</a>
-        </section>
-        <section class="footer-social">
+        </div>
+        <div class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
+          <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
+          <a class="btn-social btn-social-fb" href="#">Фейсбук</a>
+          <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+          <a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </body>
