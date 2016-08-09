@@ -27,7 +27,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#" class="current-menu">Магазин</a>
+              <a class="current-menu">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -53,76 +53,58 @@
           <a href="#">Магазин</a>
         </li>
         <li>
-          <span class="current">Средства для ухода</span>
+          <a class="current">Средства для ухода</a>
         </li>
       </ul>
       </section>
 
       <!--Каталог-->
 
-      <div class="container catalog">
+      <div class="catalog">
 
       <!--Фильтры-->
 
         <section class="filters">
-          <form action="#" method="get">
+          <form class="filters-box" action="#" method="get">
 
-            <div class="filters-producers">
+
               <h2 class="filters-title">Производители</h2>
               <ul>
                 <li>
-                  <label>
-                    <input type="checkbox" name="baxter-of-california" checked>Baxter of california
-                  </label>
+                  <input type="checkbox" name="boc" id="boc" checked><label for="boc">Baxter of california</label> <!--boc-Baxter fo California-->
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="mr-nutty">Mr natty
-                  </label>
+                  <input type="checkbox" name="mr-natty" id="mr-natty"><label for="mr-natty">Mr natty</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="suavecito" checked>Suavecito
-                  </label>
+                  <input type="checkbox" name="suavecito" id="suavecito" checked><label for="suavecito">Suavecito</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="malin-goetz">Malin+goetz
-                  </label>
+                  <input type="checkbox" name="malin-goetz" id="malin-goetz"><label for="malin-goetz">Malin+goetz</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="murrays">Murray's
-                  </label>
+                  <input type="checkbox" name="murrays" id="murrays"><label for="murrays">Murray's</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="american-crew" checked>American crew
-                  </label>
+                  <input type="checkbox" name="american-crew" id="american-crew" checked><label for="american-crew">American crew</label>
                 </li>
               </ul>
-            </div>
 
-            <div class="filters-goods-group">
+
+
               <h2 class="filters-title">Группы товаров</h2>
               <ul>
                 <li>
-                  <label>
-                    <input type="radio" name="goods-group" value="shaving">Бритвенные принадлежности
-                  </label>
+                  <input type="radio" name="goods-group" id="shaving" value="shaving"><label for="shaving">Бритвенные принадлежности</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="radio" name="goods-group" value="care" checked>Средства для ухода
-                  </label>
+                  <input type="radio" name="goods-group" id="care" value="care" checked><label for="care">Средства для ухода</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="radio" name="goods-group" value="accessories">Акссесуары
-                  </label>
+                  <input type="radio" name="goods-group" id="accessories" value="accessories"><label for="accessories">Аксеcсуары</label>
                 </li>
               </ul>
-            </div>
+
 
             <button type="submit" class="btn btn-show">Показать</button>
 
@@ -221,8 +203,8 @@
               <a href="#" class="btn">1</a>
             </li>
             <li>
-              <span class="current">2</span>
-            </li>                             
+              <a class="current">2</a>
+            </li>
             <li>
               <a href="#" class="btn">3</a>
             </li>
